@@ -1,7 +1,4 @@
 <script setup>
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { Navigation, Controller, Pagination } from "swiper";
-import "swiper/css";
 import axios from "axios";
 import { ref } from "vue";
 
@@ -27,10 +24,6 @@ const fetchData = async () => {
 };
 
 const images = ref([]);
-
-const onSwiper = (swiper) => {};
-
-const onSlideChange = () => {};
 
 fetchData().then((data) => {
   images.value = data;
@@ -1058,8 +1051,6 @@ a {
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation, Controller, Pagination } from "swiper";
 import "swiper/css";
-import axios from "axios";
-import { ref } from "vue";
 
 export default {
   components: {
@@ -1070,8 +1061,6 @@ export default {
     Pagination,
   },
   setup() {
-    const images = ref([]);
-
     const onSwiper = (swiper) => {
       console.log(swiper);
     };
