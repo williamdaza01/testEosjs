@@ -823,8 +823,6 @@ fetchData().then((data) => {
             navigation
             pagination
             :controller="{ control: firstSwiper }"
-            @swiper="onSwiper"
-            @slideChange="onSlideChange"
           >
             <SwiperSlide v-for="img in images" :key="img.id">
               <img :src="img.download_url" alt="" class="w-100 h-100" />
@@ -1061,18 +1059,6 @@ export default {
     Pagination,
   },
   setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-
-    const onSlideChange = () => {
-      console.log("slide change");
-    };
-
-    return {
-      onSwiper,
-      onSlideChange,
-    };
   },
 };
 </script>
