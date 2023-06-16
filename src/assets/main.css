@@ -1,0 +1,10 @@
+@import './base.css';
+@import 'bootstrap';
+@import 'bootstrap-icons';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+
+body{
+ background-color: #24292E;
+ font-family: 'Roboto', sans-serif;
+}
